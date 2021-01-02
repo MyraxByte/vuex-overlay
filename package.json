@@ -1,5 +1,5 @@
 {
-  "name": "vuex-overlay",
+  "name": "vuex-overlay-tools",
   "version": "1.0.0",
   "description": "Vuex state monitoring tool (for Vue 3) - no solution yet available official Vue Devtools",
   "main": "src/index.js",
