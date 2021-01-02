@@ -30,9 +30,6 @@ createApp(App)
 
 ## Preview
 *After adding the plugin to your application, you can open the overlay with your store*
-
-![](https://media.giphy.com/media/I2r81qElqGh3pAkik5/giphy.gif)
-
 *Time travel is also supported*
 
-![](https://media.giphy.com/media/CPcHTbQDzCJKi5vSY7/giphy.gif)
+![](https://i.imgur.com/RQPG21h.png)
