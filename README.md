@@ -1,6 +1,6 @@
 ## Vuex Overlay Tool
 
-![](https://i.imgur.com/RQPG21h.png)
+![](https://i.imgur.com/ANnsWdu.jpeg)
 
 I like Vue, but latest release (Vue 3) is working only with new `vue-devtools` version and there is no Vuex at this moment.
 And I must to create a temporary solution for this problem - `vuex-overlay-tool`.
