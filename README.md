@@ -1,7 +1,11 @@
 ## Vuex Overlay Tool
-Vuex state monitoring tool (for Vue 3) - temporary alternative instead of vue-devtools (vuex functionality)
 
 ![](https://i.imgur.com/RQPG21h.png)
+
+I like Vue, but latest release (Vue 3) working only with new `vue-devtools` version and there is no Vuex in it at the moment.
+And I must to create a temporary solution for this problem - `vuex-overlay-tool`.
+
+**Vuex Overlay Tool** plugin for **Vue 3** provides monitoring of the state in the store with feature from `vue-devtools` time-travel.
 
 ## Features
 * overplay panel with Vuex store from your app
