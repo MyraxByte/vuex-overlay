@@ -1,0 +1,35 @@
+{
+  "name": "vuex-overlay",
+  "version": "1.0.0",
+  "description": "Vuex state monitoring tool (for Vue 3) - no solution yet available official Vue Devtools",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "repository": "https://github.com/Mirazex/vuex-overlay.git",
+  "bugs": "https://github.com/Mirazex/vuex-overlay/issues",
+  "homepage": "https://github.com/Mirazex/vuex-overlay#readme",
+  "author": "Mirax <mirax.developer@gmail.com>",
+  "license": "MPL-2.0",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "keywords": [
+    "vuejs",
+    "vue3",
+    "vuex",
+    "vuex-devtools",
+    "vue-devtools",
+    "vue-next",
+    "vue-plugin",
+    "state-management",
+    "vue-tool",
+    "vuex-tool"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@vueuse/core": "^4.0.2",
+    "lodash": "^4.17.20",
+    "vue": "^3.0.5",
+    "vue-json-pretty": "^2.0.1",
+    "vuex": "^4.0.0-rc.2"
+  }
+}
