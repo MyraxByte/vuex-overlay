@@ -29,6 +29,7 @@
 import {ref} from "vue";
 import { useStore } from "vuex";
 import Pretty from "vue-json-pretty"
+import { formatGetters } from "../utils/formatGetters";
 
 export default {
   name: 'vo-getters-page',
@@ -37,10 +38,11 @@ export default {
     const store = useStore();
     const getters = ref([])
 
-    Object.keys(store.getters).forEach(key => {
-      const item = { module: key.split('/')[0], values: {} }
-      item.values[key.split('/')[1]] = store.getters[key] === null ? 'null' : store.getters[key]
+    const storeGetters = formatGetters(store)
 
+    Object.keys(storeGetters.getters).forEach(key => {
+      const item = { module: key, values: {} }
+      item.values = storeGetters.getters[key] === null ? 'null' : storeGetters.getters[key]
       getters.value.push(item)
     })
 
