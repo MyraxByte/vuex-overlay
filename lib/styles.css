@@ -54,6 +54,37 @@
     --vo-box-shadow-md: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+h1, h2,h3,h4,h5,h6, p {
+    margin: 0
+}
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-color: var(--vo-bg-color);
+    color: var(--vo-heading-color);
+    min-height: 100vh;
+    overflow-y: auto;
+    height: 0px;
+}
+
+a,
+button,
+input,
+textarea {
+    outline: unset !important;
+    border: unset;
+    padding: unset;
+    margin: unset;
+    text-decoration: unset;
+    user-select: none;
+    background-color: unset;
+}
+
+a, button {
+    cursor: pointer;
+}
+
 /* transitions */
 .vo-slide-enter-active {
     transition: all 0.3s ease;
@@ -62,7 +93,9 @@
 .vo-slide-leave-active {
     transition: all 0.3s ease;
 }
-
+.flex-grow {
+    flex-grow: 1;
+}
 .vo-slide-enter-from,
 .vo-slide-leave-to {
     transform: translateY(-100%);
@@ -114,7 +147,6 @@ body[data-vo-tool="true"] {
     max-width: 1280px;
     margin-inline: auto;
     padding: 16px;
-    min-height: 100%;
     align-items: flex-start;
 }
 
@@ -364,7 +396,7 @@ body[data-vo-tool="true"] {
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    min-height: 34px;
+    min-height: 24px;
 }
 .vo-store-modules__item:hover,
 .vo-store-mutation__card:hover {
@@ -410,7 +442,7 @@ body[data-vo-tool="true"] {
     position: relative;
     border: 1px solid var(--vo-borders);
     border-radius: 6px;
-    padding: 8px;
+    padding: 8px 8px 4px 8px;
     transition: background-color .3s ease-in-out;
 }
 .vo-getter__card:hover {
@@ -420,18 +452,20 @@ body[data-vo-tool="true"] {
 .vo-getter__card-header {
     color: var(--vo-bracket-color);
     font-size: 14px;
-    padding: 8px;
+    padding: 8px 8px 16px 8px;
+    line-height: 14px;
     border-bottom: 1px solid var(--vo-borders);
     text-transform: capitalize;
 }
 .vo-getter__card-header span {
     font-weight: 600;
     font-size: 14px;
+    line-height: 14px;
     color: var(--vo-primary-color)
 }
 .vo-getter__card-content {
-    padding: 8px;
-    margin-top: 8px;
+    padding: 4px;
+    margin-top: 4px;
 }
 
 /* mutations page */
@@ -527,7 +561,7 @@ body[data-vo-tool="true"] {
     padding-left: 32px
 }
 .vjs-tree__node.is-highlight, .vjs-tree__node:hover {
-    background-color: var(--vo-ui-hover)
+
 }
 
 .vjs-tree__node .vjs-tree__indent {
