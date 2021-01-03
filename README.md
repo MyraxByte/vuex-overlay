@@ -8,12 +8,10 @@ And I must to create a temporary solution for this problem - `vuex-overlay-tool`
 **Vuex Overlay Tool** plugin for **Vue 3** provides monitoring of the state in the store with feature from `vue-devtools` time-travel.
 
 ## Features
-* overplay panel with Vuex store from your app
+* overlay panel with Vuex store from your app
 * mutations history
 * state & getters overview
 * time travel for mutations
-
-PS. Package working with Vuex modules 
 
 ## Getting Started
 Required
