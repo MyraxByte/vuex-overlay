@@ -26,7 +26,7 @@
     </div>
     <div class="vo-store-state__card-body">
       <Pretty
-          :data="state"
+          :data="openedState"
           :showLength="true"
           :showLine="false"
           :showDoubleQuotes="false"
@@ -41,6 +41,7 @@
 import {computed, onMounted, ref, watch} from "vue";
 import { useStore, mapState } from "vuex";
 import Pretty from "vue-json-pretty"
+import { formatState } from "../utils/formatState";
 
 export default {
   name: 'vo-states-page',
@@ -48,20 +49,20 @@ export default {
   setup() {
     const store = useStore();
     const current = ref(null);
-    const state = ref({});
+    const openedState = ref({});
 
-    const modules = Object.keys(store.state).filter(k => k !== 'vuexOverlay');
+    const { modules, state } = formatState(store)
 
     const onSelect = (name) => {
       current.value = name;
-      state.value = store.state[name];
+      openedState.value = state[name];
     };
 
-    onMounted(() => onSelect('app'))
+    onMounted(() => onSelect(modules[0]))
 
     return {
       current,
-      state,
+      openedState,
       modules,
       onSelect,
     };
