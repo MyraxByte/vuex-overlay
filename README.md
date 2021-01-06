@@ -2,6 +2,8 @@
 
 ![](https://i.imgur.com/ANnsWdu.jpeg)
 
+![npm](https://img.shields.io/npm/dm/vuex-overlay-tools?color=0b1015&style=for-the-badge) ![npm](https://img.shields.io/npm/v/vuex-overlay-tools?color=0b1015&label=version&style=for-the-badge) ![NPM](https://img.shields.io/npm/l/vuex-overlay-tools?color=0b1015&style=for-the-badge)
+
 I like Vue, but latest release (Vue 3) is working only with new `vue-devtools` version and there is no Vuex at this moment.
 And I must to create a temporary solution for this problem - `vuex-overlay-tool`.
 
