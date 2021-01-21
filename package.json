@@ -4,6 +4,7 @@
   "description": "Vuex state monitoring tool (for Vue 3) - no solution yet available official Vue Devtools",
   "main": "lib/index.js",
   "module": "lib/index.js",
+  "types": "lib/index.d.js",
   "repository": "https://github.com/Mirazex/vuex-overlay.git",
   "bugs": "https://github.com/Mirazex/vuex-overlay/issues",
   "homepage": "https://github.com/Mirazex/vuex-overlay#readme",

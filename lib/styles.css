@@ -60,12 +60,7 @@ h1, h2,h3,h4,h5,h6, p {
 body {
     margin: 0;
     padding: 0;
-    user-select: none;
-    background-color: var(--vo-bg-color);
-    color: var(--vo-heading-color);
-    min-height: 100vh;
     overflow-y: auto;
-    height: 0px;
 }
 
 a,
